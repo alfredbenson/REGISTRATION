@@ -1,0 +1,409 @@
+x
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.home h1 span {
+  color: #00b594;
+  
+}
+
+.home h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+.home h2{
+  letter-spacing: 2px;
+}
+
+.home nav {
+  display: flex;
+  justify-content: right;
+  transform: translateX(-20px) translateY(-50px);
+}
+
+.home nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.home nav ul li {
+  list-style-type: none;
+}
+
+.home nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #503c9b;
+  text-decoration: underline;
+}
+
+.home-picture {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-picture img {
+  width: 650px;
+  height: 500px;
+  margin-right: 2px;
+  margin-left: 100px;
+}
+
+
+.note1 {
+  height: 65%;
+  width: calc(33.33% - 20px);
+  margin-left: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: translateY(13px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color:#e8f4ff;
+}
+
+
+.note1 h2 {
+  margin-top: 1rem;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  
+}
+.note1 span {
+  color: #00b594;
+  margin-left: 3px;
+}
+
+.note1 p {
+  font-size: 17px;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  word-spacing: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00b594;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic";
+  
+}
+/***** SIGN UP ****/
+.home2 {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.home2 h1 span {
+  color: #00b594;
+  
+}
+.home2 h2 span {
+  color: #00b594;
+  
+}
+
+
+.home2 h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+.home2 h2{
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.home2 nav {
+  display: flex;
+  justify-content: right;
+  transform: translateX(-20px) translateY(-50px);
+}
+
+.home2 nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.home2 nav ul li {
+  list-style-type: none;
+}
+
+.home2 nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #503c9b;
+  text-decoration: underline;
+}
+.login h1{
+  text-align: center;
+ }
+
+
+ /*******THE BOX*******/
+form {
+  transform: translateX(100%) translateY(50px);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-forgot label {
+  font-size: 0.9rem;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 165px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #00b594;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+
+  
+
+
+/******** DASHBOARD *********/
+
+.wrapper{
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  position: relative;
+  
+}
+.wrapper .ulo h2 {
+  color: black;
+  text-align: center;
+}
+.ulo .hay{
+  font-weight: 900;
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+.wrapper  h2 span {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.wrapper .sidebar{
+  width: 250px;
+  min-height: 1000px;
+  background: #00b594;
+}
+.sidebar ul li  i {
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+}
+.wrapper .sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Franklin Gothic';
+  
+}
+.sidebar ul li:hover{
+  background: #259b86;
+}
+.wrapper .sidebar ul li a:hover{
+  color: white;
+}
+/*******RIGHT SIDEBAR********/
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+input[type="search"]{
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  
+}
+
+.right input{
+  margin-left: 68%;
+}
+.right  .add-notes{
+  font-size:15px;
+  float: right;
+}
+.note {
+  
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.note-date {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.note-content {
+  margin-bottom: 10px;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: gray;
+}
+
+.note-footer .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 120px;
+}
+
+
+
+/************* REGISTRATION FORM**************/
+
+
+.head h1{
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color:#e8f4ff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #00b594;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+
