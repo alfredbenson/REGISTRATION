@@ -1,0 +1,672 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  color: #fff;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background: #000;
+
+}
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+.home h1 span {
+  color: #00b594;
+}
+
+.home h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+.home h2 {
+  letter-spacing: 2px;
+}
+
+.home nav {
+  display: flex;
+  justify-content: right;
+  transform: translateX(-20px) translateY(-50px);
+}
+
+.home nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.home nav ul li {
+  list-style-type: none;
+}
+
+.home nav ul li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #503c9b;
+  text-decoration: underline;
+}
+
+.home-picture {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-picture img {
+  width: 650px;
+  height: 500px;
+  margin-right: 2px;
+  margin-left: 100px;
+}
+
+.note1 {
+ 
+  width: calc(33.33% - 70px);
+  margin-left: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: translateY(13px);
+ 
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.note1 h2 {
+  margin-top: 1rem;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+.note1 span {
+  color: #00b594;
+  margin-left: 3px;
+}
+
+.note1 p {
+  font-size: 17px;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  word-spacing: 10px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00b594;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic";
+  transform: translateY(10px);
+}
+/***** SIGN UP ****/
+
+
+.container{
+    position: relative;
+    width: 950px;
+    height: 950px;
+    border: 2px solid gray;
+    box-shadow: 0 0 5px whitesmoke;
+    overflow: hidden;
+}
+.container .form-boxes{
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    
+    flex-direction: column;
+}
+.form-boxes{
+    left: 0;
+    padding: 0 40px;
+}
+.form-boxes h2{
+    font-size: 32px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+}
+.form-boxes span{
+    color: #00b594;
+    font-size: 50px;
+}
+.form-boxes .input-boxes{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+.input-boxes input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
+    margin-top: 5px;
+    text-align: center;
+}
+.input-boxes label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+    
+}
+.btn{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #00b594;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#25252b,#00b594,#25252b,#00b594);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+}
+.btn:hover::before{
+    top: 0;
+
+}
+.regi-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.regi-link a{
+    text-decoration: none;
+    color: skyblue;
+    font-weight: 600;
+}
+.regi-link a:hover{
+    text-decoration: underline;
+}
+.infos-content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.infos-content.Login{
+    right: 0;
+    text-align: center;
+    padding: 0  50px 150px;
+}
+.infos-content h2{
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 1.3;
+   
+}
+.infos-content p{
+    font-size: 16px;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+.container .curved-shapes {
+    position: absolute;
+    right: 0;
+    height: 650px;
+    width: 440px;
+    background: linear-gradient(45deg,#25252b,#00b594);
+    transform-origin: bottom right;
+    
+    
+}
+/******** DASHBOARD *********/
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.wrapper .ulo h2 {
+  color: black;
+  text-align: center;
+}
+.ulo .hay {
+  font-weight: 900;
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+}
+.wrapper h2 span {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.wrapper .sidebar {
+  width: 250px;
+  min-height: 1000px;
+  background: #00b594;
+}
+.sidebar ul li i {
+  padding: 15px;
+  color: white;
+  margin-top: 10px;
+}
+.wrapper .sidebar ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Franklin Gothic";
+}
+.sidebar ul li:hover {
+  background: #259b86;
+}
+.wrapper .sidebar ul li a:hover {
+  color: white;
+}
+/*******RIGHT SIDEBAR********/
+.content {
+  flex: 1;
+  padding: 20px;
+  width: 100px;
+}
+
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="search"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.right input {
+  margin-left: 55%;
+}
+.right .add-notes {
+  font-size: 10px;
+  float: right;
+  margin-left: 5px;
+}
+.note {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 55px;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.note-date {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.note-content {
+  margin-bottom: 10px;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: gray;
+}
+
+.note-footer .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 120px;
+}
+.sidebar .image {
+  transform: translateX(10px) translateY(570px);
+  margin-left: 15px;
+}
+.sidebar .names p {
+  transform: translateX(90px) translateY(500px);
+}
+/************* REGISTRATION FORM**************/
+
+.container{
+  position: relative;
+  width: 750px;
+  height: 450px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px whitesmoke;
+  overflow: hidden;
+}
+.container .form-boxs{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-boxs{
+  left: 0;
+  padding: 0 40px;
+}
+.form-boxs h2{
+  font-size: 32px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+}
+.form-boxs span{
+  color: #00b594;
+  font-size: 50px;
+}
+.form-boxs .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  padding-right: 23px;
+  margin-top: 5px;
+  text-align: center;
+}
+.input-box label{
+  position: absolute;
+  top: 5px;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: gray;
+  
+}
+.btn{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #00b594;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 100%;
+  background: linear-gradient(#25252b,#00b594,#25252b,#00b594);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+}
+.btn:hover::before{
+  top: 0;
+
+}
+.regi-link{
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.regi-link a{
+  text-decoration: none;
+  color: skyblue;
+  font-weight: 600;
+}
+.regi-link a:hover{
+  text-decoration: underline;
+}
+.info-content{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.info-content.Login{
+  right: 0;
+  text-align: right;
+  padding: 0 47px 60px 150px;
+}
+.info-content h2{
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1.3;
+ 
+}
+
+
+.info-content p{
+  font-size: 16px;
+  color: antiquewhite;
+}
+.container .curved-shape{
+  position: absolute;
+  right: 0;
+  top: -5px;
+  height: 600px;
+  width: 7500px;
+  background: linear-gradient(45deg,#25252b,#00b594);
+  transform: rotate(10deg)skewY(40deg);
+  transform-origin: bottom right;
+ 
+}
+/************** home ********/
+@media (max-width: 1200px) {
+  .home h1 {
+    margin-left: 15px;
+  }
+
+  .home nav ul li a {
+    font-size: 18px;
+  }
+
+  .home-picture img {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .home nav {
+    justify-content: center;
+    transform: translateX(0) translateY(0);
+  }
+
+  .home nav ul {
+    gap: 10px;
+  }
+
+  .home-picture img {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .note1 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .note1 h2 {
+    font-size: 32px;
+  }
+
+  .button {
+    padding: 8px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 24px;
+  }
+
+  .home nav ul li a {
+    font-size: 16px;
+  }
+
+  .home-picture {
+    height: auto;
+  }
+
+  .home-picture img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .note1 p {
+    font-size: 14px;
+    word-spacing: normal;
+  }
+
+  .button {
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .infos-content, .form-boxes {
+        width: 100%;
+    }
+    .infos-content h2, .form-boxes h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .infos-content h2, .form-boxes h2 {
+        font-size: 24px;
+    }
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    .form-boxs h2, .form-boxs span {
+        font-size: 36px;
+    }
+
+    .info-content h2 {
+        font-size: 28px;
+    }
+}
+
+/* For phones and small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-boxs h2, .form-boxs span {
+        font-size: 24px;
+    }
+
+    .info-content h2 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 14px;
+    }
+}
